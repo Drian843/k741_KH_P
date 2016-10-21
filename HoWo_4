@@ -1,0 +1,22 @@
+#include <stdio.h>
+ 
+int main()
+{
+  int i, j;
+  int myArray[3][3]; // объявляем массив размером 8*8 элементов
+ 
+  for ( i = 0; i < 3; i++ ) {
+    for ( j = 0; j < 3; j++ )
+      myArray[i][j] = i * j; // каждому элементу присваиваем значение произведения текущих индексов элемента массива
+  }
+ 
+  printf( "Massive:\n" );
+  for ( i = 0; i < 3; i++ ) {
+    for ( j = 0; j < 3; j++ )
+    {
+		printf( "[%d][%d]=%d ", i, j, myArray[i][j] );
+    }
+    printf( "\n" );
+  }
+  getchar();
+}
