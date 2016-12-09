@@ -10,11 +10,11 @@ char *s2 = new char[10];
 char *s3 = new char[5];
 //char *R = new char[10];
 int kol = 0;
-cout << "Ââåäèòå 1 ñòðîêó: ";
+cout << "1: ";
 scanf("%s", s1);
-cout << "Ââåäèòå 2 ñòðîêó: ";
+cout << "2: ";
 scanf("%s", s2);
-cout << "Ââåäèòå 3 ñòðîêó: ";
+cout << "3: ";
 scanf("%s", s3);
 strcat(s1, s2);
 int n = 0;
@@ -25,6 +25,6 @@ n = R-s1;
 R = strstr(s1+n+1, s3);
 kol++;
 }
-cout << "Êîëè÷åñòâî âõîæäåíèé ðàâíî: " << kol << endl;
+cout << ": " << kol << endl;
 system("pause");
 }
